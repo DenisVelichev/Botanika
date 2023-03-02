@@ -1,0 +1,523 @@
+/***** FONTS *****/
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay Regular'),
+    local('PlayfairDisplay-Regular'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay Bold'),
+    local('PlayfairDisplay-Bold'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay BoldItalic'),
+    local('PlayfairDisplay-BoldItalic'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: local('PlayfairDisplay Italic'),
+    local('PlayfairDisplay-Italic'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'),
+    local('Montserrat-Bold'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'),
+    local('Montserrat-Regular'),
+    url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/***** COMMON *****/
+
+.body * {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #AE7C78;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: PlayfairDisplay;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 80px;
+    background: #D89999;
+    border-radius: 40px;
+    color: #ffffff;
+}
+
+.button-arrow {
+    width: 50px;
+    height: 8px;
+    background: url("../images/icons/arrow-left.svg") center center / cover no-repeat ;
+    border: none;
+}
+
+.button-arrow.button-arrow_right {
+    transform: rotate(180deg);
+}
+
+/****** HEADER *****/
+
+.header {
+    margin-top: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #AE7C78;
+    border-top: 1px solid #AE7C78;
+}
+
+.header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navigation .navigation__item {
+    line-height: 19px;
+}
+
+/***** INTRO *****/
+
+.intro {
+    margin-top: 80px;
+}
+
+.intro .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.intro .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+}
+
+.intro .intro__title {
+    margin-bottom: 24px;
+}
+
+.intro .intro__title,
+.intro .intro__title > span {
+    font-family: PlayfairDisplay;
+    font-size: 44px;
+    line-height: 58px;
+}
+
+.intro .intro__title > span {
+    font-style: italic;
+}
+
+.intro .intro__text {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.intro .intro__wrapper .button {
+    margin-top: 64px;
+}
+
+.intro .container .header__title span {
+    font-style: italic;
+}
+
+.intro .container > img:first-of-type{
+    margin-top: 60px;
+}
+
+/***** ADVANTAGES *****/
+
+.advantages {
+    margin-top: 48px;
+}
+
+.advantages .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advantages .advantage {
+    display: grid;
+    gap: 20px;
+}
+
+.advantages .advantage .advantage__image {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+}
+
+.advantages .advantage .advantage__description {
+    grid-row: 1/1;
+    grid-column: 2/2;
+    width: 285px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.advantages .advantage .advantage__title {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/***** POPULAR ******/
+
+.popular {
+    margin-top: 80px;
+}
+
+.popular .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular .title {
+    text-align: center;
+}
+
+.popular .popular__carousel {
+    display: flex;
+    flex-direction: row;
+    width: 794px;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.popular .popular__description {
+    width: 387px;
+    margin-top: 27px;
+    margin-right: 20px;
+}
+
+.popular .popular__description-title,
+.popular .popular__description-price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.popular .popular__description-text {
+    margin-top: 20px;
+}
+
+.popular .popular__description-size {
+    margin-top: 24px;
+}
+
+.popular .popular__description-price {
+    margin-top: 24px;
+}
+
+.popular .button {
+    margin-top: 64px;
+}
+
+.popular .popular__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.popular .button-arrow.button-arrow_left {
+    margin-right: 10px;
+}
+
+.popular .button-arrow.button-arrow_right {
+    margin-left: 10px;
+}
+
+/***** BOUQUETS *****/
+
+.bouquets {
+    margin-top: 80px;
+}
+
+.bouquets .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bouquets .bouquets__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 388px;
+    height: 442px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bouquets .bouquets__item:first-child {
+    background: linear-gradient(rgba(174, 124, 120, 0.6) 100%, #AE7C78 100%),
+    url("../images/bouquets1.png") top center / cover no-repeat;
+}
+
+.bouquets .bouquets__item:nth-child(2) {
+    background: linear-gradient(rgba(174, 124, 120, 0.6) 100%, #AE7C78 100%),
+    url("../images/bouquets2.png") top center / cover no-repeat;
+}
+.bouquets .bouquets__item:nth-child(3) {
+    background: linear-gradient(rgba(174, 124, 120, 0.6) 100%, #AE7C78 100%),
+    url("../images/bouquets3.png") top center / cover no-repeat;
+}
+
+.bouquets .bouquets__item *{
+    color: #ffffff;
+}
+
+.bouquets .bouquets__item .title {
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+}
+
+/***** SALE *****/
+
+.sale {
+    margin-top: 80px;
+}
+
+.sale .container {
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sale .sale__item {
+    width: 610px;
+    padding: 40px 121px 64px 102px;
+    background: #AE7C78;
+}
+
+.sale .sale__item * {
+    color: #ffffff;
+}
+
+.sale .sale__item .title {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+}
+
+.sale .sale__item .sale__item-text {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/***** PERFECT FLOWER *****/
+
+.steps {
+    margin-top: 80px;
+}
+
+.steps .container {
+    display: flex;
+    flex-direction: column;
+    height: 232px;
+}
+
+.steps .title {
+    align-self: center;
+    letter-spacing: 0.02em;
+}
+
+.steps .steps__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+}
+
+.steps .steps__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.steps .steps__item .steps__item-title {
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/***** REVIEW *****/
+
+.review {
+    margin-top: 96px;
+}
+
+.review .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 44px 64px;
+    border: 1px solid #AE7C78;
+}
+
+.review .title {
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.review .review__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review .review__item {
+    width: 300px;
+    text-align: center;
+}
+
+.review .review__item .review__user {
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+/***** CONTACTS *****/
+
+.contacts {
+    margin-top: 80px;
+    padding-top: 52px;
+    height: 644px;
+    background: url("../images/map.png") top center / cover no-repeat;
+}
+
+.contacts .contacts__wrapper{
+    width: 386px;
+    height: 520px;
+    margin-left: 102px;
+    padding: 40px 35px;
+    background: #F7FAFC;
+    box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+    border-radius: 12px;
+}
+
+.contacts .title {
+    margin-bottom: 42px;
+}
+
+.contacts .contacts__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .contacts__item:nth-of-type(1) {
+    margin-bottom: 32px;
+
+}
+.contacts .contacts__item:nth-of-type(2) {
+    margin-bottom: 29px;
+}
+
+.contacts .contacts__item:nth-of-type(3) {
+    margin-bottom: 35px;
+}
+
+.contacts .contacts__item .contacts__subtitle{
+    line-height: 20px;
+}
+
+.contacts .contacts__item:nth-of-type(1) .contacts__subtitle{
+    margin-bottom: 21px;
+}
+
+.contacts .contacts__item:nth-of-type(2) .contacts__subtitle{
+    margin-bottom: 13px;
+}
+
+.contacts .contacts__item:nth-of-type(3) .contacts__subtitle{
+    margin-bottom: 14px;
+}
+
+.contacts .contacts__item:nth-of-type(4) .contacts__subtitle{
+    margin-bottom: 17px;
+}
+
+.contacts .contacts__data {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+/***** FOOTER *****/
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    background: #AE7C78;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 103px;
+}
+
+.footer .footer__wrapper {
+    display: flex;
+    gap: 68px;
+}
+
+.footer .navigation__item {
+    color: #ffffff;
+}
