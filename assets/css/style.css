@@ -28,8 +28,6 @@
     font-style: italic;
 }
 
-
-
 @font-face {
     font-family: 'PlayfairDisplay';
     src: local('PlayfairDisplay Italic'),
@@ -39,18 +37,14 @@
     font-style: italic;
 }
 
-
-
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat Bold'),
     local('Montserrat-Bold'),
-    url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
+    url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
-
-
 
 @font-face {
     font-family: 'Montserrat';
